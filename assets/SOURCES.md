@@ -23,13 +23,6 @@ Downloaded November 5, 2026 from `https://raw.githubusercontent.com/mlastes1987/
 - `screenshots/srw-prelude.png` → `prelude.png`
 - `screenshots/srw-episode-briefing.png` → `episode-briefing.png`
 
-## Fūun Kabuki-den
-
-- `screenshots/kabukiden-dialogue.png` → `C:/kabukiden/analysis/headless-pce/relocation-npc/frame-000900.png`
-- `screenshots/kabukiden-title.png` → `C:/kabukiden/analysis/headless-pce/title/frame-000600.png`
-
-PC Engine CD captures from the local headless emulator workflow. NPC dialogue is an experimental English relocation preview. The original Japanese title is included for context and labeled accordingly.
-
 ## Illustrations
 
 The Emerald Earth Fire card uses HTML/CSS typography and patterns, labeled as artwork rather than gameplay. The favicon is an original SVG letter mark.
