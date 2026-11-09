@@ -5,10 +5,41 @@ const projects = {
   odysselya: { title: 'Shinseiki Odysselya', body: `<p>An unofficial English fan translation of VIC TOKAI’s 1993 Super Famicom RPG.</p><h3>Where it stands</h3><p>All 5,167 extracted script messages have a reviewed first-pass English translation. An experimental English overlay is playable, with opening and menu emulator coverage. Later scenes, graphics text, and further polish remain in progress.</p><p>The public project is marked <strong>coming soon</strong>. A release date has not been announced. The screenshots are authentic development-build captures.</p><p>Development tools remain private. The translation was made with extensive AI assistance; corrections and playtesting feedback are welcome.</p>`, links: [['Project page','https://github.com/mlastes1987/odysselya-eng'],['Community','https://discord.gg/DwR2jxj5b']] },
   srw: { title: 'Super Robot Wars HD', body: `<p>English translation of Super Robot Taisen HD / Super Robot Wars HD: story, battle dialogue, menus, unit information, and English artwork.</p><h3>Available for testing</h3><ul><li><strong>PS3:</strong> 0.1.1-preview for Japanese NPJB00514 in RPCS3, with a Windows patcher.</li><li><strong>PS Vita:</strong> early 0.1.2-vita-preview for PCSG00260, packaged as a rePatch overlay.</li></ul><p>These are work-in-progress previews. Vita hardware compatibility and the latest runtime changes still need in-game confirmation. All screenshots here are <strong>PS3 / RPCS3 captures</strong>.</p><p>Join Discord for test builds. Reports of missing text, overflow, menu problems, and battle paging issues are especially useful.</p>`, links: [['Project & guides','https://github.com/mlastes1987/SRTHD-En'],['Get test builds','https://discord.gg/DwR2jxj5b'],['Report a bug','https://github.com/mlastes1987/SRTHD-En/issues']] },
   emerald: { title: 'Emerald Earth Fire', body: `<p>A Pokémon Emerald decompilation ROM hack based on RHH’s <strong>pokeemerald-expansion 1.17.0</strong>.</p><h3>The adventure</h3><p>The intended journey covers Hoenn’s eight badges and Elite Four, then Kanto’s eight badges and Elite Four. The development build includes a post-Hoenn-League Lilycove–Vermilion crossing, a Kanto starter gift, separate regional badge flags, and access to the Sevii Islands.</p><h3>Development status</h3><p>The local Emerald build and focused save, trainer-data, and progression checks pass. <strong>Full in-game progression remains unverified.</strong> The public repository may trail local development.</p><p>The card is project artwork. Gameplay screenshots will be added when available.</p><p>Credit to RHH, pokeemerald-expansion contributors, and pret’s Pokémon Emerald decompilation.</p>`, links: [['Project source','https://github.com/mlastes1987/EmeraldEarthFire'],['Upstream engine','https://github.com/rh-hideout/pokeemerald-expansion']] },
+  namida: {
+    title: 'Tengai Makyou III: Namida',
+    body: `<p>English translation in progress for the Japanese PlayStation 2 RPG.</p><p>The main message archive yielded 27,635 indexed entries. The draft combines edited translations with a machine-assisted first pass that still needs contextual review. The local opening test inserts 41 translated messages. In-game text fit and text outside the main message archive still need work.</p><p>A public patch is pending.</p>`,
+    links: [],
+    date: 'November 9, 2026'
+  },
+  kenshin: {
+    title: 'Rurouni Kenshin RPG',
+    body: `<p>English translation of <em>Rurouni Kenshin: Meiji Kenkaku Romantan — Juuyuushi Inbou-hen</em> for PlayStation.</p><p>The team has drafted 10,363 extracted lines in English. An experimental proportional font displays the opening narration and five lines from the first street confrontation. Editing, broader insertion, and in-game testing are next.</p><p>A public patch is pending.</p>`,
+    links: [],
+    date: 'November 9, 2026'
+  },
+  'odysselya-ii': {
+    title: 'Shinseiki Odysselya II',
+    body: `<p>Early English translation work for the Super Famicom sequel. The first game’s translation provides a terminology reference.</p><p>The local preview displays the opening date, “509 BC,” using the first game’s font. Research is underway on opening dialogue, field menus, and battle text.</p><p>A public patch is pending.</p>`,
+    links: [],
+    date: 'November 9, 2026'
+  }
 };
 const galleries = {
   odysselya: { title:'Shinseiki Odysselya',pixel:true,shots:[['odysselya-dialogue.png','Koror and Kyle in the sanctuary. English dialogue from a work-in-progress SNES build.'],['odysselya-battle.png','English battle dialogue against a moonlit backdrop. Work in progress.'],['odysselya-exploration.png','Exploring a snowy landscape in the development build.'],['odysselya-equipment.png','English equipment and party menus. Layout and text remain subject to polish.']] },
   srw: { title:'Super Robot Wars HD',pixel:false,shots:[['srw-prelude.png','Translated prelude. Authentic PS3 / RPCS3 capture, not a Vita screenshot.'],['srw-title-screen.png','English logo and faithful menu artwork. PS3 / RPCS3 capture approved November 4, 2026.'],['srw-episode-briefing.png','Episode title and English briefing. PS3 / RPCS3 development capture.']] },
+  kenshin: {
+    title: 'Rurouni Kenshin RPG',
+    pixel: true,
+    shots: [['kenshin-opening.png', 'English opening narration in the PlayStation dialogue test.']]
+  },
+  'odysselya-ii': {
+    title: 'Shinseiki Odysselya II',
+    pixel: true,
+    shots: [
+      ['odysselya-ii-opening.png', 'The opening date caption, “509 BC,” in the Super Famicom preview.'],
+      ['odysselya-ii-title.png', 'Original Shinseiki Odysselya II title logo during the opening.']
+    ]
+  }
 };
 const filters=document.querySelector('.filters');
 filters.hidden=false;
@@ -23,6 +54,7 @@ const galleryDialog=document.querySelector('#gallery-dialog');
 const notesDialog=document.querySelector('#notes-dialog');
 let activeGallery,shotIndex=0,lastTrigger;
 function renderShot(){
+  galleryDialog.querySelector('.gallery-controls').hidden = galleries[activeGallery].shots.length === 1;
   const gallery=galleries[activeGallery];const [file,caption]=gallery.shots[shotIndex];const img=document.querySelector('#gallery-image');
   img.src=`assets/screenshots/${file}`;img.alt=caption;img.classList.toggle('pixel',gallery.pixel);
   document.querySelector('#gallery-title').textContent=gallery.title;
@@ -36,7 +68,7 @@ document.querySelector('#gallery-next').addEventListener('click',()=>changeShot(
 galleryDialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'){event.preventDefault();changeShot(-1);}if(event.key==='ArrowRight'){event.preventDefault();changeShot(1);}});
 document.querySelectorAll('.details-trigger').forEach(button=>button.addEventListener('click',()=>{
   const project=projects[button.dataset.project];lastTrigger=button;
-  document.querySelector('#notes-content').innerHTML=`<h2 id="notes-title">${project.title}</h2>${project.body}<div class="note-links">${project.links.map(([label,url])=>`<a href="${url}">${label} ↗</a>`).join('')}</div><p class="note-date">Project snapshot · November 5, 2026</p>`;
+  document.querySelector('#notes-content').innerHTML=`<h2 id="notes-title">${project.title}</h2>${project.body}<div class="note-links">${project.links.map(([label,url])=>`<a href="${url}">${label} ↗</a>`).join('')}</div><p class="note-date">Project snapshot · ${project.date ?? 'November 5, 2026'}</p>`;
   notesDialog.showModal();
 }));
 for(const dialog of [galleryDialog,notesDialog]){

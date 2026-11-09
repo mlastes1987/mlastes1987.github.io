@@ -5,4 +5,6 @@
 /* Give every project preview the same frame; enlarge the full capture in galleries. */
 #gallery-image{width:100%;height:min(65vh,640px);max-height:65vh;object-fit:contain}
 body:has(dialog[open]){overflow:hidden}
+.namida-art{background-color:#362746;color:#f5e7fc}
+.namida-art .image-label{background-color:#59406c;color:#f5e7fc}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}

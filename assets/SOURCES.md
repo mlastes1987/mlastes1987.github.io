@@ -23,8 +23,19 @@ Downloaded November 5, 2026 from `https://raw.githubusercontent.com/mlastes1987/
 - `screenshots/srw-prelude.png` → `prelude.png`
 - `screenshots/srw-episode-briefing.png` → `episode-briefing.png`
 
+## Rurouni Kenshin RPG
+
+- `screenshots/kenshin-opening.png` comes from `C:/rurouni-kenshin-rpg/work/qa/smoke/final.png`, the opening narration test.
+
+## Shinseiki Odysselya II
+
+Both captures come from `C:/Odysselya/odysselya2/work/qa/english-preview/`.
+
+- `screenshots/odysselya-ii-opening.png` comes from `f000750.png`, the English date caption test.
+- `screenshots/odysselya-ii-title.png` comes from `f001050.png`, the original title logo.
+
 ## Illustrations
 
-The Emerald Earth Fire card uses HTML/CSS typography and patterns, labeled as artwork rather than gameplay. The favicon is an original SVG letter mark.
+The Emerald Earth Fire and Namida cards use HTML/CSS typography and patterns. The favicon is an original SVG letter mark.
 
 Original games, characters, and artwork belong to their respective rights holders.
