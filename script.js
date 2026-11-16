@@ -11,12 +11,6 @@ const projects = {
     links: [],
     date: 'November 9, 2026'
   },
-  kenshin: {
-    title: 'Rurouni Kenshin RPG',
-    body: `<p>English translation of <em>Rurouni Kenshin: Meiji Kenkaku Romantan — Juuyuushi Inbou-hen</em> for PlayStation.</p><p>The team has drafted 10,363 extracted lines in English. An experimental proportional font displays the opening narration and five lines from the first street confrontation. Editing, broader insertion, and in-game testing are next.</p><p>A public patch is pending.</p>`,
-    links: [],
-    date: 'November 9, 2026'
-  },
   'odysselya-ii': {
     title: 'Shinseiki Odysselya II',
     body: `<p>Early English translation work for the Super Famicom sequel. The first game’s translation provides a terminology reference.</p><p>The local preview displays the opening date, “509 BC,” using the first game’s font. Research is underway on opening dialogue, field menus, and battle text.</p><p>A public patch is pending.</p>`,
@@ -27,11 +21,6 @@ const projects = {
 const galleries = {
   odysselya: { title:'Shinseiki Odysselya',pixel:true,shots:[['odysselya-dialogue.png','Koror and Kyle in the sanctuary. English dialogue from a work-in-progress SNES build.'],['odysselya-battle.png','English battle dialogue against a moonlit backdrop. Work in progress.'],['odysselya-exploration.png','Exploring a snowy landscape in the development build.'],['odysselya-equipment.png','English equipment and party menus. Layout and text remain subject to polish.']] },
   srw: { title:'Super Robot Wars HD',pixel:false,shots:[['srw-prelude.png','Translated prelude. Authentic PS3 / RPCS3 capture, not a Vita screenshot.'],['srw-title-screen.png','English logo and faithful menu artwork. PS3 / RPCS3 capture approved November 4, 2026.'],['srw-episode-briefing.png','Episode title and English briefing. PS3 / RPCS3 development capture.']] },
-  kenshin: {
-    title: 'Rurouni Kenshin RPG',
-    pixel: true,
-    shots: [['kenshin-opening.png', 'English opening narration in the PlayStation dialogue test.']]
-  },
   'odysselya-ii': {
     title: 'Shinseiki Odysselya II',
     pixel: true,
@@ -54,7 +43,6 @@ const galleryDialog=document.querySelector('#gallery-dialog');
 const notesDialog=document.querySelector('#notes-dialog');
 let activeGallery,shotIndex=0,lastTrigger;
 function renderShot(){
-  galleryDialog.querySelector('.gallery-controls').hidden = galleries[activeGallery].shots.length === 1;
   const gallery=galleries[activeGallery];const [file,caption]=gallery.shots[shotIndex];const img=document.querySelector('#gallery-image');
   img.src=`assets/screenshots/${file}`;img.alt=caption;img.classList.toggle('pixel',gallery.pixel);
   document.querySelector('#gallery-title').textContent=gallery.title;

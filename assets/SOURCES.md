@@ -23,10 +23,6 @@ Downloaded November 5, 2026 from `https://raw.githubusercontent.com/mlastes1987/
 - `screenshots/srw-prelude.png` → `prelude.png`
 - `screenshots/srw-episode-briefing.png` → `episode-briefing.png`
 
-## Rurouni Kenshin RPG
-
-- `screenshots/kenshin-opening.png` comes from `C:/rurouni-kenshin-rpg/work/qa/smoke/final.png`, the opening narration test.
-
 ## Shinseiki Odysselya II
 
 Both captures come from `C:/Odysselya/odysselya2/work/qa/english-preview/`.
