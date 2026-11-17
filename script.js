@@ -13,9 +13,9 @@ const projects = {
   },
   'odysselya-ii': {
     title: 'Shinseiki Odysselya II',
-    body: `<p>Early English translation work for the Super Famicom sequel. The first game’s translation provides a terminology reference.</p><p>The local preview displays the opening date, “509 BC,” using the first game’s font. Research is underway on opening dialogue, field menus, and battle text.</p><p>A public patch is pending.</p>`,
+    body: `<p>English translation in progress for the Super Famicom sequel. The first game’s translation provides a terminology reference.</p><p>The development build displays Erg’s town-exit line in English. The field menu has English tabs, party status labels, and item commands. Item names and contextual help are still in Japanese.</p><p>A public patch is pending.</p>`,
     links: [],
-    date: 'November 9, 2026'
+    date: 'November 16, 2026'
   }
 };
 const galleries = {
@@ -25,6 +25,9 @@ const galleries = {
     title: 'Shinseiki Odysselya II',
     pixel: true,
     shots: [
+      ['odysselya-ii-sparta.png', 'Erg’s town-exit dialogue in Sparta, captured in the November 16 development build.'],
+      ['odysselya-ii-party.png', 'The party overview with English field menu tabs, character names, and the Gold label.'],
+      ['odysselya-ii-items.png', 'The item menu with English Use, Move, Discard, and Sort commands. Item names are still in Japanese.'],
       ['odysselya-ii-opening.png', 'The opening date caption, “509 BC,” in the Super Famicom preview.'],
       ['odysselya-ii-title.png', 'Original Shinseiki Odysselya II title logo during the opening.']
     ]

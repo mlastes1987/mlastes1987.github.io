@@ -25,7 +25,13 @@ Downloaded November 5, 2026 from `https://raw.githubusercontent.com/mlastes1987/
 
 ## Shinseiki Odysselya II
 
-Both captures come from `C:/Odysselya/odysselya2/work/qa/english-preview/`.
+The November 16 development captures come from `C:/Odysselya/odysselya2/work/qa/`.
+
+- `screenshots/odysselya-ii-sparta.png` comes from `sparta-exit-english/f021140.png`.
+- `screenshots/odysselya-ii-party.png` comes from `stock-gold-review/f000130.png`.
+- `screenshots/odysselya-ii-items.png` comes from `english-item-actions/f020290.png`.
+
+The earlier captures come from `C:/Odysselya/odysselya2/work/qa/english-preview/`.
 
 - `screenshots/odysselya-ii-opening.png` comes from `f000750.png`, the English date caption test.
 - `screenshots/odysselya-ii-title.png` comes from `f001050.png`, the original title logo.
