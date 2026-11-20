@@ -19,6 +19,11 @@ const projects = {
 const galleries = {
   odysselya: { title:'Shinseiki Odysselya',pixel:true,shots:[['odysselya-dialogue.png','Koror and Kyle in the sanctuary. English dialogue from a work-in-progress SNES build.'],['odysselya-battle.png','English battle dialogue against a moonlit backdrop. Work in progress.'],['odysselya-exploration.png','Exploring a snowy landscape in the development build.'],['odysselya-equipment.png','English equipment and party menus. Layout and text remain subject to polish.']] },
   srw: { title:'Super Robot Wars HD',pixel:false,shots:[['srw-prelude.png','Translated prelude. Authentic PS3 / RPCS3 capture, not a Vita screenshot.'],['srw-title-screen.png','English logo and faithful menu artwork. PS3 / RPCS3 capture approved November 4, 2026.'],['srw-episode-briefing.png','Episode title and English briefing. PS3 / RPCS3 development capture.']] },
+  namida: {
+    title: 'Tengai Makyou III: Namida',
+    pixel: false,
+    shots: [['namida-gameplay.png', 'Battle scene from the original Japanese PS2 release.']]
+  },
   'odysselya-ii': {
     title: 'Shinseiki Odysselya II',
     pixel: true,
@@ -44,6 +49,7 @@ const galleryDialog=document.querySelector('#gallery-dialog');
 const notesDialog=document.querySelector('#notes-dialog');
 let activeGallery,shotIndex=0,lastTrigger;
 function renderShot(){
+  galleryDialog.querySelector('.gallery-controls').hidden = galleries[activeGallery].shots.length === 1;
   const gallery=galleries[activeGallery];const [file,caption]=gallery.shots[shotIndex];const img=document.querySelector('#gallery-image');
   img.src=`assets/screenshots/${file}`;img.alt=caption;img.classList.toggle('pixel',gallery.pixel);
   document.querySelector('#gallery-title').textContent=gallery.title;
