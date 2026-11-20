@@ -8,7 +8,7 @@ const projects = {
   namida: {
     title: 'Tengai Makyou III: Namida',
     body: `<p>English translation in progress for the Japanese PlayStation 2 RPG.</p><p>The main message archive yielded 27,635 indexed entries. The draft includes 1,063 hand-translated entries and a machine-assisted pass that still needs contextual review. Local Test 04 inserts the hand-translated event text through ev0323mes plus reviewed system and credits text.</p><p>In-game text fit and text outside the main archive still need work. A public patch is pending.</p>`,
-    links: []
+    links: [['Tools & documentation', 'https://github.com/mlastes1987/namida']]
   },
   'odysselya-ii': {
     title: 'Shinseiki Odysselya II',
