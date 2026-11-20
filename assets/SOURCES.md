@@ -45,6 +45,6 @@ The earlier captures come from `C:/Odysselya/odysselya2/work/qa/english-preview/
 
 ## Illustrations
 
-The Emerald Earth Fire card uses HTML/CSS typography and patterns. The favicon is an original SVG letter mark.
+The Emerald Earth Fire title screen comes from the project’s v0.4-beta emulator capture at `C:/EmeraldEarthFire/docs/images/earth-fire-v0.4-beta/title-screen-v0.4-beta.png`. The favicon is an original SVG letter mark.
 
 Original games, characters, and artwork belong to their respective rights holders.
