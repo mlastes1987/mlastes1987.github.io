@@ -43,6 +43,11 @@ The earlier captures come from `C:/Odysselya/odysselya2/work/qa/english-preview/
 - Tengai Makyou III: Namida Japanese front cover and Japanese gameplay capture. [LaunchBox image listing](https://gamesdb.launchbox-app.com/games/images/161595-tengai-makyou-iii-namida)
 - Super Robot Wars HD digital cover from the publisher’s 2014 PS3 and Vita listing. [Official Super Robot Wars lineup](https://www.suparobo.jp/srw_lineup)
 
+## Kikou Seiki Unitron
+
+- `covers/unitron.jpg` is the Japanese front cover. [LaunchBox image listing](https://gamesdb.launchbox-app.com/games/images/77631-kikou-seiki-unitron-sono-tsuide-hikari-umareru-chi-yori)
+- The main menu, prologue, and battle screenshots come from `C:/unitron/build/qa/` in the English preview.
+
 ## Illustrations
 
 The Emerald Earth Fire title screen comes from the project’s v0.4-beta emulator capture at `C:/EmeraldEarthFire/docs/images/earth-fire-v0.4-beta/title-screen-v0.4-beta.png`. The favicon is an original SVG letter mark.

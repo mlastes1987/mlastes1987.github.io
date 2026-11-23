@@ -14,9 +14,24 @@ const projects = {
     title: 'Shinseiki Odysselya II',
     body: `<p>English translation in progress for the Super Famicom sequel.</p><p>The current internal build includes 398 English text entries. An emulator test booted through the opening and verified Erg’s Sparta exit line. The 49 new Athens entries still need in-game review.</p><p>The gallery shows earlier captures of the Sparta dialogue and field menus. The shared project repository tracks both games, and the sequel patch is forthcoming.</p>`,
     links: [['Shared project page', 'https://github.com/mlastes1987/odysselya-eng#project-status']]
+  },
+  unitron: {
+    title: 'Kikou Seiki Unitron',
+    body: `<p>English fan translation in development for the Neo Geo Pocket Color RPG. The preview uses a proportional font adapted from the Shinseiki Odysselya translation.</p><p>English coverage includes the main menu, file selection, character setup, all 14 parts of the scrolling prologue, and the battle command menu and its prompts. Most gameplay text, menu subpages, and the title graphics still need translation.</p><p>The public repository has instructions for building an IPS preview patch from a Japanese retail ROM.</p>`,
+    links: [['Project & build instructions', 'https://github.com/mlastes1987/unitron']],
+    checked: 'November 22, 2026'
   }
 };
 const galleries = {
+  unitron: {
+    title: 'Kikou Seiki Unitron',
+    pixel: true,
+    shots: [
+      ['unitron-menu.png', 'The translated main menu.'],
+      ['unitron-prologue.png', 'English text in the scrolling prologue.'],
+      ['unitron-battle.png', 'The translated battle command menu and prompt.']
+    ]
+  },
   odysselya: { title:'Shinseiki Odysselya',pixel:true,shots:[['odysselya-dialogue.png','Koror and Kyle in the sanctuary. English dialogue from a work-in-progress SNES build.'],['odysselya-battle.png','English battle dialogue against a moonlit backdrop. Work in progress.'],['odysselya-exploration.png','Exploring a snowy landscape in the development build.'],['odysselya-equipment.png','English equipment and party menus. Layout and text remain subject to polish.']] },
   srw: { title:'Super Robot Wars HD',pixel:false,shots:[['srw-prelude.png','Translated prelude. Authentic PS3 / RPCS3 capture, not a Vita screenshot.'],['srw-title-screen.png','English logo and faithful menu artwork. PS3 / RPCS3 capture approved November 4, 2026.'],['srw-episode-briefing.png','Episode title and English briefing. PS3 / RPCS3 development capture.']] },
   namida: {
@@ -63,7 +78,7 @@ document.querySelector('#gallery-next').addEventListener('click',()=>changeShot(
 galleryDialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'){event.preventDefault();changeShot(-1);}if(event.key==='ArrowRight'){event.preventDefault();changeShot(1);}});
 document.querySelectorAll('.details-trigger').forEach(button=>button.addEventListener('click',()=>{
   const project=projects[button.dataset.project];lastTrigger=button;
-  document.querySelector('#notes-content').innerHTML=`<h2 id="notes-title">${project.title}</h2>${project.body}<div class="note-links">${project.links.map(([label,url])=>`<a href="${url}">${label} ↗</a>`).join('')}</div><p class="note-date">Status checked November 20, 2026</p>`;
+  document.querySelector('#notes-content').innerHTML=`<h2 id="notes-title">${project.title}</h2>${project.body}<div class="note-links">${project.links.map(([label,url])=>`<a href="${url}">${label} ↗</a>`).join('')}</div><p class="note-date">Status checked ${project.checked ?? 'November 20, 2026'}</p>`;
   notesDialog.showModal();
 }));
 for(const dialog of [galleryDialog,notesDialog]){
