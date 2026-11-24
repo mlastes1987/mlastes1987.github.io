@@ -20,12 +20,12 @@ const projects = {
   },
   'odysselya-ii': {
     title: 'Shinseiki Odysselya II',
-    body: `<p>English translation in progress for the Super Famicom sequel.</p><p>The November 23 playtest includes 4,537 of 6,622 indexed script entries in English. The latest batch covers the alternate prologue, the underworld confrontation and separation, the asphodel discovery, and the Earth Dragon encounter. Emulator testing reached the Sparta exit. The new scenes still need testing through normal gameplay.</p><p>The gallery shows earlier captures of the Sparta dialogue and field menus. The shared project repository tracks both games, and the sequel patch is forthcoming.</p>`,
+    body: `<p>English translation in progress for the Super Famicom sequel.</p><p>The November 23 internal playtest has English for all 6,758 entries in the current script index. The latest build translates the Gear slot markers, combat stats, seven weapon proficiencies, and sixteen magic schools. Emulator checks covered the Gear and Status screens and the opening through the Sparta exit. Later scenes still need in-game testing, and battle effects, graphics, and credits remain in development.</p><p>The gallery shows earlier captures of the Sparta dialogue and field menus. The shared project repository tracks both games, and the sequel patch is forthcoming.</p>`,
     links: [['Shared project page', 'https://github.com/mlastes1987/odysselya-eng#project-status']]
   },
   unitron: {
     title: 'Kikou Seiki Unitron',
-    body: `<p>English fan translation in development for the Neo Geo Pocket Color RPG. The preview uses a proportional font adapted from the Shinseiki Odysselya translation.</p><p>English coverage includes the main menu, file selection, character setup, all 14 parts of the scrolling prologue, and the battle command menu and its prompts. Most gameplay text, menu subpages, and the title graphics still need translation.</p><p>The public repository has instructions for building an IPS preview patch from a Japanese retail ROM.</p>`,
+    body: `<p>English fan translation in development for the Neo Geo Pocket Color RPG. The preview uses a proportional font adapted from the Shinseiki Odysselya translation.</p><p>The latest local preview covers the menus and prologue, then follows the story through the Spirit Shrine, Silver Lake, Verdant Forest, the Black Knight encounter at Rafias, and the Mirage Tower briefing. It translates the battle interface and all named equipment catalogue entries. Later story scenes, most enemy names and enemy-specific moves, and some partner battle dialogue remain in progress.</p><p>The public repository has IPS patch build instructions. The gallery shows earlier preview captures.</p>`,
     links: [['Project & build instructions', 'https://github.com/mlastes1987/unitron']]
   }
 };
