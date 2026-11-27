@@ -13,11 +13,6 @@ const projects = {
   },
   srw: { title: 'Super Robot Wars HD', body: `<p>English translation of Super Robot Taisen HD / Super Robot Wars HD, including story and battle dialogue, menus, unit information, and artwork.</p><h3>Current playtest builds</h3><ul><li><strong>PS3:</strong> 0.1.10-preview for Japanese NPJB00514 in RPCS3, with a Windows patcher.</li><li><strong>PS Vita:</strong> 0.1.11-vita-preview for PCSG00260, packaged as a rePatch overlay.</li></ul><p>The November 22 previews keep intermission help on one line, fit upgrade effects inside their panels, and add English Upgrade Unit and Upgrade Item banners. Automated checks passed. The updated layouts still need an in-game visual check. Ask about build availability on Discord. Vita hardware compatibility still needs confirmation. The gallery shows PS3 / RPCS3 captures.</p>`, links: [['Project & guides','https://github.com/mlastes1987/SRTHD-En'],['Get test builds','https://discord.gg/DwR2jxj5b'],['Report a bug','https://github.com/mlastes1987/SRTHD-En/issues']] },
   emerald: { title: 'Emerald Earth Fire', body: `<p>A Pokémon Emerald decompilation ROM hack based on RHH’s <strong>pokeemerald-expansion 1.17.0</strong>.</p><p>The source builds the two-region adventure. After the Hoenn League, players can travel from Lilycove to Vermilion, receive a Kanto starter, earn a separate set of badges, and visit the Sevii Islands.</p><p>The v0.4-beta build adds a red-sky Rayquaza title screen and fixes regional progression and save handling. Birch offers Sprigatito, Chimchar, or Sobble. A new game starts with 35,000 Pokédollars and supplies in the bedroom PC. DexNav becomes available after receiving the Pokédex. The integration check passed 5,177 headless tests, and a separate emulator check verified the title animation and transition to the main menu. A full Hoenn-to-Kanto playthrough is still pending. The public repository provides source and build instructions.</p><p>Credit to RHH, pokeemerald-expansion contributors, and pret’s Pokémon Emerald decompilation.</p>`, links: [['Project source','https://github.com/mlastes1987/EmeraldEarthFire'],['Upstream engine','https://github.com/rh-hideout/pokeemerald-expansion']] },
-  namida: {
-    title: 'Tengai Makyou III: Namida',
-    body: `<p>English translation in progress for the Japanese PlayStation 2 RPG.</p><p>The main message archive yielded 27,635 indexed entries. The draft includes 1,063 hand-translated entries and a machine-assisted pass that still needs contextual review. Local Test 04 inserts the hand-translated event text through ev0323mes plus reviewed system and credits text.</p><p>Rendering and line fit still need in-game checks. The public repository contains extraction and build tools. A public patch is pending.</p>`,
-    links: [['Tools & documentation', 'https://github.com/mlastes1987/namida']]
-  },
   'odysselya-ii': {
     title: 'Shinseiki Odysselya II',
     body: `<p>English translation in progress for the Super Famicom sequel.</p><p>The November 23 internal playtest has English for all 6,758 entries in the current script index. The latest build translates the Gear slot markers, combat stats, seven weapon proficiencies, and sixteen magic schools. Emulator checks covered the Gear and Status screens and the opening through the Sparta exit. Later scenes still need in-game testing, and battle effects, graphics, and credits remain in development.</p><p>The gallery shows earlier captures of the Sparta dialogue and field menus. The shared project repository tracks both games, and the sequel patch is forthcoming.</p>`,
@@ -41,11 +36,6 @@ const galleries = {
   },
   odysselya: { title:'Shinseiki Odysselya',pixel:true,shots:[['odysselya-dialogue.png','Koror and Kyle in the sanctuary. English dialogue from a work-in-progress SNES build.'],['odysselya-battle.png','English battle dialogue against a moonlit backdrop. Work in progress.'],['odysselya-exploration.png','Exploring a snowy landscape in the development build.'],['odysselya-equipment.png','English equipment and party menus. Layout and text remain subject to polish.']] },
   srw: { title:'Super Robot Wars HD',pixel:false,shots:[['srw-prelude.png','Translated prelude. Authentic PS3 / RPCS3 capture, not a Vita screenshot.'],['srw-title-screen.png','English logo and faithful menu artwork. PS3 / RPCS3 capture approved November 4, 2026.'],['srw-episode-briefing.png','Episode title and English briefing. PS3 / RPCS3 development capture.']] },
-  namida: {
-    title: 'Tengai Makyou III: Namida',
-    pixel: false,
-    shots: [['namida-gameplay.png', 'Battle scene from the original Japanese PS2 release.']]
-  },
   'odysselya-ii': {
     title: 'Shinseiki Odysselya II',
     pixel: true,

@@ -36,11 +36,10 @@ The earlier captures come from `C:/Odysselya/odysselya2/work/qa/english-preview/
 - `screenshots/odysselya-ii-opening.png` comes from `f000750.png`, the English date caption test.
 - `screenshots/odysselya-ii-title.png` comes from `f001050.png`, the original title logo.
 
-## Covers and Namida screenshot
+## Covers
 
 - Shinseiki Odysselya Japanese front cover. [LaunchBox image listing](https://gamesdb.launchbox-app.com/games/images/26572-shinseiki-odysselya)
 - Shinseiki Odysselya II Japanese front cover. [LaunchBox image listing](https://gamesdb.launchbox-app.com/games/images/26573-shinseiki-odysselya-ii)
-- Tengai Makyou III: Namida Japanese front cover and Japanese gameplay capture. [LaunchBox image listing](https://gamesdb.launchbox-app.com/games/images/161595-tengai-makyou-iii-namida)
 - Super Robot Wars HD digital cover from the publisher’s 2014 PS3 and Vita listing. [Official Super Robot Wars lineup](https://www.suparobo.jp/srw_lineup)
 
 ## Kikou Seiki Unitron
